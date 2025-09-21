@@ -1,31 +1,54 @@
 # GoFlieDownLoader_French
 📥 GoFileDownloader
 
-GoFileDownloader est un outil en Python permettant de télécharger facilement des fichiers ou des albums depuis GoFile.io
+GoFileDownloader est un outil Python permettant de télécharger facilement des fichiers ou albums depuis GoFile.io
 .
-Il supporte :
 
-les albums simples,
+Il prend en charge :
 
-les albums protégés par mot de passe,
+Les albums simples
 
-le téléchargement en lot (plusieurs liens à la fois),
+Les albums protégés par mot de passe
 
-la personnalisation du dossier de destination,
+Le téléchargement en lot (batch)
 
-et un suivi visuel de la progression grâce à la librairie rich.
+La personnalisation du dossier de destination
+
+Le suivi visuel de la progression grâce à la librairie rich
+
+🗂 Structure du projet
+/src/
+  config.py
+  download_utils.py
+  file_utils.py
+  general_utils.py
+  gofile_utils.py
+  /managers/
+    live_manager.py
+    log_manager.py
+    progress_manager.py
+    __init__.py
+  __init__.py
+downloader.py
+main.py
+requirements.txt
+CONTRIBUTING.md
+LICENSE
+/assets/
+  demo.gif
+  logo-small-70.png
 
 🚀 Installation
 
 Télécharger le projet
 
-Via Git :
+Avec Git :
 
 git clone https://github.com/l3gl1tch3r/GoFileDownloader.git
 cd GoFileDownloader
 
 
-Ou bien, télécharge le ZIP depuis GitHub, puis décompresse-le.
+Ou télécharger le ZIP depuis GitHub et décompresser.
 
 Installer Python 3.9+
 Vérifie l’installation :
@@ -34,7 +57,6 @@ python --version
 
 
 Installer les dépendances
-Dans le dossier du projet, lance :
 
 python -m pip install -r requirements.txt
 
@@ -54,7 +76,7 @@ https://gofile.io/d/def456
 https://gofile.io/d/ghi789
 
 
-Lance la commande :
+Lance le script principal :
 
 python main.py
 
@@ -67,16 +89,16 @@ python main.py --custom-path "C:/MonDossier"
 
 📝 Journal (Logs)
 
-Le script génère un fichier session_log.txt qui contient :
+Le script crée un fichier session_log.txt contenant :
 
-les téléchargements réussis,
+les téléchargements réussis
 
-les erreurs rencontrées (liens invalides, mot de passe manquant, etc.).
+les erreurs rencontrées (liens invalides, mot de passe manquant, etc.)
 
 ⚠️ Remarques importantes
 
-Utilise uniquement cet outil pour des fichiers que tu es autorisé à télécharger.
+Utilise cet outil uniquement pour des fichiers que tu es autorisé à télécharger
 
-Si GoFile modifie son site ou son API, le script peut nécessiter une mise à jour.
+Si GoFile modifie son site ou son API, le script peut nécessiter une mise à jour
 
-Les albums volumineux peuvent prendre un certain temps à se télécharger.
+Les albums volumineux peuvent prendre un certain temps à se télécharger

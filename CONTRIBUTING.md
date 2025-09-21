@@ -1,70 +1,63 @@
-# Contributing
+🤝 Contribuer
 
-First of all, thank you for considering contributing! We welcome contributions from everyone, including bug reports, feature requests, documentation improvements, and code enhancements.
+Merci pour votre intérêt ! Vous pouvez contribuer via :
 
-This document outlines the process and guidelines to ensure smooth collaboration.
+Correction de bugs
 
-## How to Contribute
+Propositions de fonctionnalités
 
-### 1. Fork the Repository
-Create a personal fork of the repository and clone it to your local machine.
+Amélioration de la documentation
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-```
+Amélioration du code
 
-### 2. Create a Branch
+Étapes pour contribuer
 
-Always create a new branch for your work. Use descriptive branch names:
+Forker le dépôt
 
-```bash
-git checkout -b feature/my-new-feature
-git checkout -b bugfix/fix-issue-123
-```
+git clone https://github.com/votre-nom-utilisateur/GoFileDownloader.git
+cd GoFileDownloader
 
-### 3. Follow the Code Style
 
-We use **Ruff** for linting and code formatting. Please make sure your code follows these rules, provided in `ruff.toml`:
+Exemple : créer un fork personnel pour tester vos modifications.
 
-```toml
-[lint]
-select = ["ALL"]
-line-length = 88
-```
+Créer une branche pour votre travail
 
-Ensure all code passes Ruff checks before committing:
+git checkout -b feature/ajout-telechargement-par-api
+git checkout -b bugfix/correction-erreur-log
 
-```bash
+
+Exemple : feature/ajout-telechargement-par-api pour une nouvelle fonctionnalité.
+
+Respecter le style de code
+
 ruff check .
-```
 
-### 4. Write Clear Commits
 
-- Use concise commit messages (less than 50 characters for the title).
-- Include a more detailed description if needed.
+Vérifie que le code suit les règles de linting (Ruff).
 
-Example:
-```
-Add new utility function for matrix inversion
+Rédiger des commits clairs
 
-This function handles small matrices with optimized performance and includes comprehensive tests.
-```
+git add .
+git commit -m "Ajout de la gestion des albums protégés par mot de passe"
 
-### 5. Testing
 
-If applicable, write tests for your code. Make sure all existing and new tests pass before creating a pull request.
+Exemple : titre court et description dans le message de commit.
 
-### 6. Pull Requests
+Écrire des tests
 
-1. Push your branch to your fork.
-2. Open a pull request (PR) against the `main` branch of this repository.
-3. Provide a clear description of what your PR changes and why.
-4. Respond to any feedback and make updates if necessary.
+Vérifier que les tests existants passent et ajouter de nouveaux tests si nécessaire.
 
-### 7. Reporting Issues
+Créer une Pull Request (PR)
 
-If you find a bug or want to suggest a feature, please open an issue with a descriptive title and details about the problem.
+Pousser la branche sur votre fork :
 
-## Thank You
+git push origin feature/ajout-telechargement-par-api
 
-Your contributions help make this project better and more useful for everyone. We appreciate your time and effort!
+
+Ouvrir une PR vers main du dépôt original avec une description claire.
+
+Exemple : "Ajout de la fonctionnalité de téléchargement automatique des albums protégés"
+
+Signaler des problèmes
+
+Ouvrir un issue avec un titre et une description précise du problème ou de la suggestion.
